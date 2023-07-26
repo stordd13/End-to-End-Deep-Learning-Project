@@ -38,7 +38,7 @@ class Evaluation:
     def evaluation(self):
         self.model = self.load_model(self.config.path_of_model)
         self._valid_generator()
-        self.score = model.evaluate(self.valid_generator)
+        self.score = self.model.evaluate(self.valid_generator)
 
     def save_score(self):
         scores = {"loss": self.score[0], "accuracy": self.score[1]}

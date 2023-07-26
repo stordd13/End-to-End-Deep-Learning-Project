@@ -91,9 +91,9 @@ class ConfigurationManager:
     def get_validation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
             path_of_model = Path(self.config.training.trained_model_path),
-            training_data =Path("artifacts/data_ingestion/Chicken-fecal-images/"),
+            training_data = Path("artifacts/data_ingestion/Chicken-fecal-images/"),
             all_params = self.params,
             params_image_size = self.params.IMAGE_SIZE,
             params_batch_size = self.params.BATCH_SIZE
         )
-    return eval_config
+        return eval_config
