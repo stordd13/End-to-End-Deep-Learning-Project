@@ -20,7 +20,7 @@
 Clone the repository
 
 ```bash
-https://github.com/entbappy/Chicken-Disease-Classification--Project
+https://github.com/stordd13/End-to-End-Deep-Learning-Project
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
@@ -119,7 +119,7 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 	
 ## 3. Create ECR repo to store/save docker image
-    - Save the URI: 566373416292.dkr.ecr.us-east-1.amazonaws.com/chicken
+    - Save the URI: 648772456581.dkr.ecr.eu-west-3.amazonaws.com/chicken
 
 	
 ## 4. Create EC2 machine (Ubuntu) 
