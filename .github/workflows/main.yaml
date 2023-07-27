@@ -86,11 +86,8 @@ jobs:
       - name: Install unzip
         run: sudo apt-get install unzip -y
 
-      - name: Install AWS CLI
-        run: |
-          curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+      - name: Check AWS CLI version
+        run: aws --version
 
       - name: List images in ECR repository
         run: |
