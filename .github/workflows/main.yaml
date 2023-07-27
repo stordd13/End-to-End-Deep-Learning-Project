@@ -82,6 +82,12 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
 
+      - name: Install AWS CLI
+        run: |
+          curl "https://d1vvhvl2y92vvt.cloudfront.net/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+          unzip awscliv2.zip
+          sudo ./aws/install
+          
       - name: List images in ECR repository
         run: |
           aws ecr describe-images --repository-name ${{ secrets.ECR_REPOSITORY_NAME }}
