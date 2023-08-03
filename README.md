@@ -166,16 +166,15 @@ export MLFLOW_TRACKING_PASSWORD=6824692c47a369aa6f9eac5b10041d5c8edbcef0
 
 ## Save pass:
 
-s3cEZKH5yytiVnJ3h+eI3qhhzf9q1vNwEi6+q+WGdd+ACRCZ7JD6
-
+F2VBHzheONP54g7XCOjwY8ZJeahNKcxPGTA5fTgiFh+ACRAWM6LV  # I'll delete the ressource group so it won't work 
 
 ## Run from terminal:
 
-docker build -t chickenapp.azurecr.io/chicken:latest .
+docker build -t chicken.azurecr.io/chicken:latest .
 
-docker login chickenapp.azurecr.io
+docker login chicken.azurecr.io
 
-docker push chickenapp.azurecr.io/chicken:latest
+docker push chicken.azurecr.io/chicken:latest
 
 
 ## Deployment Steps:
